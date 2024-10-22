@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-website</title>
+    <style>
+        body{
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            background-color: rgb(0,0,33);
+            color: white;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18,18,52);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style: none;
+           margin: 0 23px; 
+        }
+        nav ul li a{
+           text-decoration: none;
+           color: white; 
+        }
+        nav ul li a:hover{
+          color: rgb(110, 110, 209);
+          font-size: 1.10rem; 
+        }
+
+        main hr{
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+            margin: 140px 0;
+
+        }
+        .firstsection>  div{
+          width: 30%;
+        }
+        .leftsection{ 
+            font-size: 3rem;
+          
+        }
+        .leftsection .button{
+            padding: 50px 0;
+        }
+        .leftsection .btn{
+            padding: 12px;
+            background:#1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightsection img{
+             width: 80%;
+            
+        }
+        .purple{
+            color: burlywood;
+        }
+        .text-gray{
+            color: gray;
+        }
+        #element{
+            color: burlywood;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        .secondsection h1{
+            font-size: 1.9rem;
+        }
+        .secondsection .box{
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondsection .vertical{
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 150px;
+        }
+        .image-top{
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -13px;
+        }
+        .vertical-title {
+            margin-top: 65px;
+            width: 150px;
+
+        }
+        .vertical-desc{
+            margin-top: 10px;
+          color: gray;
+          width: 100px;
+          height: 100px;
+          font-size: 13px;
+        }
+        footer{
+            background-color: #0e0e1a;
+            
+        } 
+        .footer{
+            display: flex;
+            padding: 23px 92px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Prince's Portfolio</div>
+            <div class="right">
+                <ul>
+                   <li><a href="/">Home</a></li>
+                   <li><a href="/">About</a></li>
+                   <li><a href="/">Projects</a></li>
+                   <li><a href="/">Contact Me</a></li>
+                </ul>
+                
+             </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Prince</span> 
+                <div>And i am a passionate</div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Github</button>
+                </div>
+            </div>
+            
+            <div class="rightsection">
+                <img src="bg.jpg" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+               <div class="vertical">
+                <img class="image-top" src="java png.png" alt="">
+                <div class="vertical-title">
+                    JAVA Experience (2022-2023)
+                </div>
+                <div class="vertical-desc">
+                    I have one year of experience in Java, focusing on object-oriented programming and developing web applications. I implemented RESTful APIs and collaborated with teams to enhance performance and user experience.
+.
+                </div>
+               </div>
+              
+               <div class="vertical">
+                <img class="image-top" src="html png.png" alt="">
+                <div class="vertical-title">
+                  HTML Developer (2023-2024)
+                </div>
+                <div class="vertical-desc">
+                    As an HTML Developer, I specialize in creating well-structured, semantic web pages. I focus on ensuring cross-browser compatibility and optimizing user experience through clean, accessible code.
+
+                </div>
+               </div>
+               <div class="vertical">
+                <img class="image-top" src="Front-end-logo-color@2x.png" alt="">
+                <div class="vertical-title">
+                    Front-End Developer (2023-2024)
+                </div>
+                <div class="vertical-desc">
+                    I create responsive and user-friendly interfaces using HTML, CSS, and JavaScript. I focus on enhancing user experience through clean design and efficient code, ensuring seamless functionality across various devices and browsers.
+
+                </div>
+               </div>
+               <div class="vertical">
+                <img class="image-top" src="react png.png" alt="">
+                <div class="vertical-title">
+                    React developer  (2023-2024)
+                </div>
+                <div class="vertical-desc">
+                    Currently, I am enhancing my skills in React, focusing on building dynamic and interactive user interfaces. I am learning about component-based architecture, state management, and hooks to create efficient web applications.
+
+                </div>
+               </div>
+            </div>
+
+
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Prince's Developer Portfolio</h3>
+        </div>
+</div>
+        <div class="footer-second">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+        <div class="footer-rights">
+           Copyright &#169:  princeportfolio.com | ALL RIGHTS RESERVED
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', ' Web Designer.'],
+          typeSpeed: 200,
+        });
+      </script>
+</body>
+</html>
